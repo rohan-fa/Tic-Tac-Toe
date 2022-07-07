@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     function playAgian(){
     for (let i=1; i<=9; i++){
-        $('.box' + i).text("");
+        $('#div' + i).text("");
     }
 }
 
