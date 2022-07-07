@@ -12,9 +12,29 @@ body{
     color: var(--orange);
 }
 h1{
-    font-size: 54px;
+    font-size: 35px;
     text-transform: uppercase;
     font-family: 'M PLUS 1 Code', sans-serif;
+    margin-top: 10px;
+    position: relative;
+}
+h1:before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: red;
+    height: 5px;
+    width: 52px;
+    transition: 1s;
+}
+h1:hover::before{
+    width: 194px;
+}
+#player{
+    font-size: 20px;
+    margin-top: 10px;
+    color:rgb(215, 245, 117)
 }
 .container{
     padding: 40px;

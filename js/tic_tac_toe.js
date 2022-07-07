@@ -2,19 +2,22 @@ $(document).ready(function(){
 
     let sign = 'X';
     let button = $('#playagain');
+    let display = $('#player');
 
     $('#playagain').on('click', playAgian);
 
     function playAgian(){
     for (let i=1; i<=9; i++){
         $('#div' + i).text("");
+
+        }
     }
-}
 
    $('.box').on('click', function(){
         $(this).html(sign);
               
         check();
+        display.html('Now' + " " + sign + " 's Turn");
 
         if (winningConditions()){
         alert ('win!');
